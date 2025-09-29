@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Wendy";
-  src: url("/assets/wendy.ttf");
+  src: local("/assets/wendy.ttf") format('truetype');
 }
 
 footer {
