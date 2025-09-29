@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Wendy";
+  src: url("/assets/wendy.ttf");
+}
+
+footer {
+  font-family: "Wendy";
+}
+
+.grid-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw);
+  gap: 0;
+  width: fit-content;
+}
+
+.grid-item {
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.grid-item:hover {
+  transform: scale(1);
+  transition-duration: 0.5s;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+}
