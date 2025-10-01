@@ -23,6 +23,7 @@ footer {
 .grid-item {
   cursor: pointer;
   transition-duration: 0.5s;
+  height: 20vw;
 }
 
 .grid-item:hover {
