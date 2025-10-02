@@ -37,7 +37,7 @@ function initAlbums() {
   // const date = new Date();
   // let day = date.getDate();
 
-  day = 1;
+  day = 2;
 
   for (let i = 0; i < 32; i++) {
     var div = document.createElement("div");

@@ -3,6 +3,10 @@
   src: url("assets/wendy.ttf") format('truetype');
 }
 
+body {
+  margin-top: 0;
+}
+
 footer {
   font-family: "Wendy";
 }
