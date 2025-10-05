@@ -47,3 +47,27 @@ footer {
   background-color: white;
   text-align: center;
 }
+
+@media (max-width: 1000px) { 
+  body {
+    margin: 0;
+  }
+  .grid-wrapper {
+    display: block;
+
+  }
+  .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 60vw);
+  }
+  .grid-item {
+    height: 60vw;
+  }
+
+  footer {
+    position: relative;
+    font-size: 12px;
+    width: max-content;
+  }
+
+}
