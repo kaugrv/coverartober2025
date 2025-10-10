@@ -114,5 +114,5 @@ if (nb == 31) {
 let previous = nb-1;
 let next = Number(nb) + Number(1);
 
-document.getElementById("previous").href = `/view.html?cover=${previous}`;
-document.getElementById("next").href = `/view.html?cover=${next}`;
+document.getElementById("previous").href = `/coverartober2025/view.html?cover=${previous}`;
+document.getElementById("next").href = `/coverartober2025/view.html?cover=${next}`;
