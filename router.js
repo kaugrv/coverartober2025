@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 nb = urlParams.get("cover");
 
 if (!(nb >= 0 && nb <= 31)) {
-  window.location.replace("../");
+  window.location.replace("../coverartober2025");
 }
 
 let titles = [
