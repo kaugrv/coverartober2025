@@ -35,7 +35,7 @@ let titles = [
 
 function initAlbums() {
   
-  day = 9;
+  day = 10;
 
   for (let i = 0; i < 32; i++) {
     var div = document.createElement("div");
