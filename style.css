@@ -4,7 +4,7 @@
 }
 
 body {
-  margin-top: 0;
+  margin: 0;
 }
 
 footer {
@@ -48,10 +48,61 @@ footer {
   text-align: center;
 }
 
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.album-frame {
+  display: flex;
+  flex-direction: row;
+}
+
+.album-frame-cover {
+  height: 100vh;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.album-frame-cover:hover {
+  filter: invert();
+  transition: 0.5s;
+}
+
+.album-infos {
+  font-family: "Wendy";
+  padding: 100px;
+}
+
+button {
+  font-family: "Wendy";
+  background-color: white;
+  border: solid 2px black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+audio {
+  filter:invert() saturate(0);
+}
+
+.music-player {
+  display: none;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; 
+}
+
 @media (max-width: 1000px) { 
-  body {
-    margin: 0;
-  }
   .grid-wrapper {
     display: block;
 
@@ -69,5 +120,23 @@ footer {
     font-size: 12px;
     width: max-content;
   }
+  .album-frame-cover {
+    width: 100vw;
+    height: fit-content;
+    transition: 0.5s;
+  }
+
+  .album-frame {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  
+  .album-infos {
+    padding: 20px;
+  }
+
 
 }

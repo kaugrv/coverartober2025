@@ -42,17 +42,13 @@ function initAlbums() {
     div.classList.add("grid-item");
 
     var a = document.createElement("a");
-    if (i <= day) {
-      if (i!=3) a.href = `covers/${i}.jpg`;
-      else a.href = `covers/${i}.gif`
-    }
-    else a.href = "covers/blank.jpg";
-    a.target = "_blank";
+    if (i<=day) a.href = `view.html?cover=${i}`;
+
 
     var img = document.createElement("img");
     if (i <= day) {
       if (i!=3) img.src = `covers/${i}.jpg`; 
-      else img.src = `covers/${i}.gif`
+      else img.src = `covers/${i}.gif`;
     } 
     else img.src = "covers/blank.jpg";
     img.id = "album-" + i;
