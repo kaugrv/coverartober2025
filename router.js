@@ -52,7 +52,7 @@ let descriptions = [
       <a href="https://www.instagram.com/p/DPJdsHNjGj5/" target="_blank">
         list by Sukai/Mrzozo/Louyzeu/Miamo
       </a>
-      .*･｡ﾟ"`,
+      .*･｡ﾟ`,
   "# DVi - Telecompo, Health + Human System Division",
   "# pepite - monte-carlo",
   "# Deep Purple - Highway Star",
@@ -63,7 +63,7 @@ let descriptions = [
   "# Steven Universe OST - What's the Use of Feeling (Blue)?",
   "# Crash Bandicoot 3 OST - Orient Express/Midnight Run",
   "# Dire Straits - Fade to Black",
-  ".*･｡ﾟ",
+  "# Garfield PS2 (2004) OST - Menu",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
@@ -102,6 +102,8 @@ var musicPlayer = document.createElement("audio");
 musicPlayer.setAttribute("src", `music/${nb}.mp3`);
 musicPlayer.setAttribute("controls", "controls");
 if (nb>0) document.querySelector(".album-infos").appendChild(musicPlayer);
+document.querySelector("audio").volume = 0.5; 
+document.querySelector(".album-frame-cover").addEventListener("click", () => document.querySelector("audio").play())
 
 if (nb == 0) {
   document.getElementById("previous").style.display = "none";
