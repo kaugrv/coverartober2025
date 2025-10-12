@@ -138,5 +138,14 @@ audio {
     padding: 20px;
   }
 
+  .button-row {
+    margin-bottom: 20px;
+  }
+
+  button {
+    color: black;
+    scale: 1.5;
+  }
+
 
 }

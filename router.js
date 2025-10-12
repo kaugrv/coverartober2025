@@ -51,20 +51,19 @@ let descriptions = [
       with *, following
       <a href="https://www.instagram.com/p/DPJdsHNjGj5/" target="_blank">
         list by Sukai/Mrzozo/Louyzeu/Miamo
-      </a>
-      .*･｡ﾟ`,
-  "# DVi - Telecompo, Health + Human System Division",
-  "# pepite - monte-carlo",
-  "# Deep Purple - Highway Star",
-  "# Pokemon Mystery Dungeon, Explorers of Sky OST - On the Beach at Dusk",
-  "# evanescence - bring me to life",
-  "# Babymorocco - i wish you would make it easy ",
-  "# Vitalic - My Friend Dario",
-  "# Steven Universe OST - What's the Use of Feeling (Blue)?",
-  "# Crash Bandicoot 3 OST - Orient Express/Midnight Run",
-  "# Dire Straits - Fade to Black",
-  "# Garfield PS2 (2004) OST - Menu",
-  "# Prince - When Doves Cry",
+      </a>`,
+  "DVi - Telecompo, Health + Human System Division",
+  "pepite - monte-carlo",
+  "Deep Purple - Highway Star",
+  "Pokemon Mystery Dungeon, Explorers of Sky OST - On the Beach at Dusk",
+  "evanescence - bring me to life",
+  "Babymorocco - i wish you would make it easy ",
+  "Vitalic - My Friend Dario",
+  "Steven Universe OST - What's the Use of Feeling (Blue)?",
+  "Crash Bandicoot 3 OST - Orient Express/Midnight Run",
+  "Dire Straits - Fade to Black",
+  "Garfield PS2 (2004) OST - Menu",
+  "Prince - When Doves Cry",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
@@ -95,13 +94,22 @@ else if (nb == 3)
 else {
   document.querySelector(".album-frame-cover").src = "covers/blank.jpg";
 }
-  document.querySelector(".description").innerHTML = descriptions[nb];
+  document.querySelector(".description").innerHTML = "# " + descriptions[nb];
 
 
 var musicPlayer = document.createElement("audio");
 musicPlayer.setAttribute("src", `music/${nb}.mp3`);
 musicPlayer.setAttribute("controls", "controls");
-if (nb>0) document.querySelector(".album-infos").appendChild(musicPlayer);
+if (nb>0) {
+  document.querySelector(".album-infos").appendChild(musicPlayer);
+  if ("mediaSession" in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: titles[nb],
+      artist: descriptions[nb],
+      artwork: [{ src: nb==3 ? `covers/${nb}.gif` : `covers/${nb}.jpg` }],
+    });
+  }
+}
 document.querySelector("audio").volume = 0.5; 
 document.querySelector(".album-frame-cover").addEventListener("click", () => document.querySelector("audio").play())
 

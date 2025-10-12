@@ -1,0 +1,15 @@
+{
+  "name": "cdtgrnt's cvrrtbr25",
+  "short_name": "cvrrtbr25",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "",
+  "icons": [
+    {
+      "src": "assets/appicon.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}
