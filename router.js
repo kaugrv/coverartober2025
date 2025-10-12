@@ -5,6 +5,20 @@ if (!(nb >= 0 && nb <= 31)) {
   window.location.replace("../coverartober2025");
 }
 
+if (nb == 0) {
+  document.getElementById("previous").style.display = "none";
+}
+
+if (nb == 31) {
+  document.getElementById("next").style.display = "none";
+}
+
+let previous = nb-1;
+let next = Number(nb) + Number(1);
+
+document.getElementById("previous").href = `/coverartober2025/view.html?cover=${previous}`;
+document.getElementById("next").href = `/coverartober2025/view.html?cover=${next}`;
+
 let titles = [
   ".*･｡ﾟ",
   "1 - digital playground",
@@ -111,18 +125,4 @@ if (nb>0) {
   }
 }
 document.querySelector("audio").volume = 0.5; 
-document.querySelector(".album-frame-cover").addEventListener("click", () => document.querySelector("audio").play())
-
-if (nb == 0) {
-  document.getElementById("previous").style.display = "none";
-}
-
-if (nb == 31) {
-  document.getElementById("next").style.display = "none";
-}
-
-let previous = nb-1;
-let next = Number(nb) + Number(1);
-
-document.getElementById("previous").href = `/coverartober2025/view.html?cover=${previous}`;
-document.getElementById("next").href = `/coverartober2025/view.html?cover=${next}`;
+document.querySelector(".album-frame-cover").addEventListener("click", () => document.querySelector("audio").play());
