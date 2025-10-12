@@ -64,7 +64,7 @@ let descriptions = [
   "# Crash Bandicoot 3 OST - Orient Express/Midnight Run",
   "# Dire Straits - Fade to Black",
   "# Garfield PS2 (2004) OST - Menu",
-  ".*･｡ﾟ",
+  "# Prince - When Doves Cry",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
