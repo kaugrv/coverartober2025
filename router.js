@@ -78,7 +78,7 @@ let descriptions = [
   "Dire Straits - Fade to Black",
   "Garfield PS2 (2004) OST - Menu",
   "Prince - When Doves Cry",
-  ".*･｡ﾟ",
+  "Kingo Hamada - Midnight Cruisin'",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
