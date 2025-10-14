@@ -67,7 +67,7 @@ let descriptions = [
         list by Sukai/Mrzozo/Louyzeu/Miamo
       </a>`,
   "DVi - Telecompo, Health + Human System Division",
-  "Pépite - Monte-Carlo",
+  "Pepite - Monte-Carlo",
   "Deep Purple - Highway Star",
   "Pokemon Mystery Dungeon, Explorers of Sky OST - On the Beach at Dusk",
   "Evanescence - Bring me to life",
@@ -79,7 +79,7 @@ let descriptions = [
   "Garfield PS2 (2004) OST - Menu",
   "Prince - When Doves Cry",
   "Kingo Hamada - Midnight Cruisin'",
-  ".*･｡ﾟ",
+  "Blues Pills - High Class Woman",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
@@ -101,9 +101,9 @@ let descriptions = [
 
 
 document.querySelector("h1").innerHTML = titles[nb];
-if (nb != 3)
+if (nb != 3 && nb !=14 )
   document.querySelector(".album-frame-cover").src = `covers/${nb}.jpg`;
-else if (nb == 3)
+else if (nb == 3 || nb == 14)
   document.querySelector(".album-frame-cover").src = `covers/${nb}.gif`;
 else {
   document.querySelector(".album-frame-cover").src = "covers/blank.jpg";
@@ -120,7 +120,7 @@ if (nb>0) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: titles[nb],
       artist: descriptions[nb],
-      artwork: [{ src: nb==3 ? `covers/${nb}.gif` : `covers/${nb}.jpg` }],
+      artwork: [{ src: (nb==3 || nb==14) ? `covers/${nb}.gif` : `covers/${nb}.jpg` }],
     });
   }
 }
