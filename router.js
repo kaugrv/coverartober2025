@@ -80,7 +80,7 @@ let descriptions = [
   "Prince - When Doves Cry",
   "Kingo Hamada - Midnight Cruisin'",
   "Blues Pills - High Class Woman",
-  ".*･｡ﾟ",
+  "Magenta Club - Honda Wave",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
