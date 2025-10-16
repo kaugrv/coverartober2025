@@ -81,7 +81,7 @@ let descriptions = [
   "Kingo Hamada - Midnight Cruisin'",
   "Blues Pills - High Class Woman",
   "Magenta Club - Honda Wave",
-  ".*･｡ﾟ",
+  "Gorillaz - One Percent",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
