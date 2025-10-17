@@ -82,7 +82,7 @@ let descriptions = [
   "Blues Pills - High Class Woman",
   "Magenta Club - Honda Wave",
   "Gorillaz - One Percent",
-  ".*･｡ﾟ",
+  "Ninajirachi - Fuck My Computer",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
