@@ -85,7 +85,7 @@ let descriptions = [
   "Ninajirachi - Fuck My Computer",
   "Feldup - Take It Slow",
   "Placebo - The Bitter End",
-  ".*･｡ﾟ",
+  "CoLD SToRAGE - Messij",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
