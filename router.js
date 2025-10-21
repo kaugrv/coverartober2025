@@ -86,7 +86,7 @@ let descriptions = [
   "Feldup - Take It Slow",
   "Placebo - The Bitter End",
   "CoLD SToRAGE - Messij",
-  ".*･｡ﾟ",
+  `    proudly made w/ <a href="https://sukai.neocities.org/cat2025/">sukai</a> & <a href="https://emilyrose.fr/projects/coverartober-2025">milymew</a> *`,
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
@@ -114,8 +114,10 @@ else {
 var musicPlayer = document.createElement("audio");
 musicPlayer.setAttribute("src", `music/${nb}.mp3`);
 musicPlayer.setAttribute("controls", "controls");
-if (nb>0) {
+if (nb>0 && nb!=21) {
   document.querySelector(".album-infos").appendChild(musicPlayer);
+  document.querySelector("audio").volume = 0.5; 
+
   if ("mediaSession" in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: titles[nb],
@@ -124,5 +126,10 @@ if (nb>0) {
     });
   }
 }
-document.querySelector("audio").volume = 0.5; 
 document.querySelector(".album-frame-cover").addEventListener("click", () => document.querySelector("audio").play());
+
+if (nb==21) {
+  var goo3grid = document.createElement("img");
+  goo3grid.setAttribute("src",`covers/21all.jpg`);
+  document.querySelector(".album-infos").appendChild(goo3grid);
+}
