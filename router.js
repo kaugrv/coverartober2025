@@ -89,7 +89,7 @@ let descriptions = [
   `    proudly made w/ <a href="https://sukai.neocities.org/cat2025/">sukai</a> & <a href="https://emilyrose.fr/projects/coverartober-2025">milymew</a> *`,
   "Linkin Park - Castle Of Glass",
   "Red Hot Chili Peppers - Dark Necessities ",
-  ".*･｡ﾟ",
+  "Daughter - No Care",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
