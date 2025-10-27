@@ -91,7 +91,7 @@ let descriptions = [
   "Red Hot Chili Peppers - Dark Necessities ",
   "Daughter - No Care",
   "Full Flower Moon Band - Enemy",
-  ".*･｡ﾟ",
+  "Balatro OST - Planet Pack",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
