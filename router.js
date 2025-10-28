@@ -86,13 +86,13 @@ let descriptions = [
   "Feldup - Take It Slow",
   "Placebo - The Bitter End",
   "CoLD SToRAGE - Messij",
-  `    proudly made w/ <a href="https://sukai.neocities.org/cat2025/">sukai</a> & <a href="https://emilyrose.fr/projects/coverartober-2025">milymew</a> *`,
+  `    proudly made w/ <a href="https://sukai.neocities.org/cat2025/" target="_blank">sukai</a> & <a href="https://emilyrose.fr/projects/coverartober-2025" target="_blank">milymew</a> *`,
   "Linkin Park - Castle Of Glass",
   "Red Hot Chili Peppers - Dark Necessities ",
   "Daughter - No Care",
   "Full Flower Moon Band - Enemy",
   "Balatro OST - Planet Pack",
-  ".*･｡ﾟ",
+  `made, remade and reremade w/<a href="https://ardakaniz.github.io/coverartober25/" target="_blank">arda</a><br>.*･｡ﾟ.*･｡ﾟ`,
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
@@ -101,9 +101,9 @@ let descriptions = [
 
 
 document.querySelector("h1").innerHTML = titles[nb];
-if (nb != 3 && nb !=14 )
+if (nb != 3 && nb !=14 && nb!=27)
   document.querySelector(".album-frame-cover").src = `covers/${nb}.jpg`;
-else if (nb == 3 || nb == 14)
+else if (nb == 3 || nb == 14 || nb==27)
   document.querySelector(".album-frame-cover").src = `covers/${nb}.gif`;
 else {
   document.querySelector(".album-frame-cover").src = "covers/blank.jpg";
@@ -114,7 +114,7 @@ else {
 var musicPlayer = document.createElement("audio");
 musicPlayer.setAttribute("src", `music/${nb}.mp3`);
 musicPlayer.setAttribute("controls", "controls");
-if (nb>0 && nb!=21) {
+if (nb>0 && nb!=21 && nb!=27) {
   document.querySelector(".album-infos").appendChild(musicPlayer);
   document.querySelector("audio").volume = 0.5; 
 

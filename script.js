@@ -35,7 +35,7 @@ let titles = [
 
 function initAlbums() {
   
-  day = 26;
+  day = 27;
 
   for (let i = 0; i < 32; i++) {
     var div = document.createElement("div");
@@ -47,7 +47,7 @@ function initAlbums() {
 
     var img = document.createElement("img");
     if (i <= day) {
-      if (i!=3 && i!=14) img.src = `covers/${i}.jpg`; 
+      if (i!=3 && i!=14 && i!=27) img.src = `covers/${i}.jpg`; 
       else img.src = `covers/${i}.gif`;
     } 
     else img.src = "covers/blank.jpg";
