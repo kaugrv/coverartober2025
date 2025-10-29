@@ -93,7 +93,7 @@ let descriptions = [
   "Full Flower Moon Band - Enemy",
   "Balatro OST - Planet Pack",
   `made, remade and reremade w/<a href="https://ardakaniz.github.io/coverartober25/" target="_blank">arda</a><br>.*･｡ﾟ.*･｡ﾟ`,
-  ".*･｡ﾟ",
+  "Les Louanges - La nuit est une panthère",
   ".*･｡ﾟ",
   ".*･｡ﾟ",
   ".*･｡ﾟ"
@@ -101,9 +101,9 @@ let descriptions = [
 
 
 document.querySelector("h1").innerHTML = titles[nb];
-if (nb != 3 && nb !=14 && nb!=27)
+if (nb != 3 && nb !=14 && nb!=27 && nb!=28)
   document.querySelector(".album-frame-cover").src = `covers/${nb}.jpg`;
-else if (nb == 3 || nb == 14 || nb==27)
+else if (nb == 3 || nb == 14 || nb==27 || nb==28)
   document.querySelector(".album-frame-cover").src = `covers/${nb}.gif`;
 else {
   document.querySelector(".album-frame-cover").src = "covers/blank.jpg";
@@ -122,7 +122,7 @@ if (nb>0 && nb!=21 && nb!=27) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: titles[nb],
       artist: descriptions[nb],
-      artwork: [{ src: (nb==3 || nb==14) ? `covers/${nb}.gif` : `covers/${nb}.jpg` }],
+      artwork: [{ src: (nb==3 || nb==14 || nb==27 || nb==28 ) ? `covers/${nb}.gif` : `covers/${nb}.jpg` }],
     });
   }
 }
