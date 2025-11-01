@@ -94,9 +94,9 @@ let descriptions = [
   "Balatro OST - Planet Pack",
   `made, remade and reremade w/<a href="https://ardakaniz.github.io/coverartober25/" target="_blank">arda</a><br>.*･｡ﾟ.*･｡ﾟ`,
   "Les Louanges - La nuit est une panthère",
-  ".*･｡ﾟ",
-  ".*･｡ﾟ",
-  ".*･｡ﾟ"
+  "All Them Witches - Voodoo Chile",
+  "FAUVE - Haut les Coeurs",
+  "Gorillaz - November Has Come"
 ];
 
 
